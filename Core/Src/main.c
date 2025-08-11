@@ -119,9 +119,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    uint16_t count = __HAL_TIM_GET_COUNTER(&htim1);
-    printf("Encoder count: %u\r\n", count);
-    HAL_Delay(100);
+   uint16_t count = __HAL_TIM_GET_COUNTER(&htim1);// Hardware counter
+	printf("Encoder count: %u\r\n", count);
+	 /* Encoder_Update();
+	      printf("Encoder position: %d\r\n", Encoder_GetPosition());
+	      HAL_Delay(50);
+    HAL_Delay(100);*/
   }
   /* USER CODE END WHILE */
 

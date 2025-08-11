@@ -1,0 +1,7 @@
+*.o
+*.d
+/build/
+*.swp
+*.log
+.vscode/
+.idea/
